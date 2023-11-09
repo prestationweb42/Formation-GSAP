@@ -1,0 +1,255 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    // overflow: hidden;
+    .section1 {
+        height: 80vh;
+        padding-bottom: 30px;
+        @media screen and (max-width: 900px) {
+            height: 60vh;
+        }
+        @media screen and (max-width: 700px) {
+            height: auto;
+        }
+        .container-images {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+            @media screen and (max-width: 900px) {
+                padding-top: 20px;
+            }
+            img {
+                width: 20%;
+                height: auto;
+                flex-shrink: 1;
+                margin: 20px;
+                @media screen and (max-width: 900px) {
+                    width: 40%;
+                    margin: 0px;
+                }
+            }
+        }
+        h1,
+        p {
+            text-align: center;
+            color: #f1f1f1;
+            line-height: 1.2;
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 40px;
+            padding: 0 10px;
+            font-family: Martel Sans, sans-serif;
+            @media screen and (max-width: 700px) {
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+        p {
+            margin-top: 10px;
+            font-size: 30px;
+            padding: 0 10px;
+            font-family: Montserrat, sans-serif;
+            @media screen and (max-width: 900px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .section2 {
+        height: 80vh;
+        padding: 30px 0;
+        @media screen and (max-width: 700px) {
+            height: auto;
+        }
+        h2 {
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            font-family: Martel Sans, sans-serif;
+        }
+        .container-btns {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            button {
+                padding: 10px 20px;
+                margin: 10px 0;
+                font-size: 20px;
+                background: transparent;
+                border: 1px solid #f1f1f1;
+                color: #f1f1f1;
+                cursor: pointer;
+            }
+        }
+        .btn_submit {
+            display: block;
+            font-size: 20px;
+            margin: 20px auto;
+            padding: 10px 50px;
+            background: transparent;
+            border: 1px solid #f1f1f1;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+    }
+    .section3 {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            font-family: Martel Sans, sans-serif;
+        }
+        img {
+            display: block;
+            width: 30%;
+            margin: 30px auto;
+            @media screen and (max-width: 700px) {
+                width: 40%;
+            }
+        }
+    }
+    .section4 {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            font-family: Martel Sans, sans-serif;
+        }
+        img {
+            display: block;
+            width: 30%;
+            margin: 30px auto;
+            @media screen and (max-width: 700px) {
+                width: 40%;
+            }
+        }
+        .btn_section4 {
+            display: block;
+            font-size: 20px;
+            margin: 20px auto;
+            padding: 10px 50px;
+            background: transparent;
+            border: 1px solid #111;
+            color: #111;
+            cursor: pointer;
+        }
+    }
+    .section5 {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            font-family: Martel Sans, sans-serif;
+        }
+        img {
+            display: block;
+            width: 30%;
+            margin: 30px auto;
+            @media screen and (max-width: 700px) {
+                width: 40%;
+            }
+        }
+        img:nth-child(2) {
+            // border: 2px solid black;
+            float: left;
+            margin-left: 15%;
+        }
+        .btn_section5 {
+            display: block;
+            font-size: 20px;
+            margin: 20px auto;
+            padding: 10px 50px;
+            background: transparent;
+            border: 1px solid #f1f1f1;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+    }
+    .section6 {
+        width: 100%;
+        height: 90vh;
+        padding-top: 50px;
+        @media screen and (max-width: 700px) {
+            height: 70vh;
+        }
+        .container-images-section6 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            padding-top: 50px;
+            @media screen and (max-width: 900px) {
+                padding-top: 20px;
+            }
+            img {
+                width: 20%;
+                height: auto;
+                flex-shrink: 1;
+                margin: 20px;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-30px);
+                @media screen and (max-width: 700px) {
+                    width: 30%;
+                    margin: 0px;
+                }
+            }
+        }
+        .h2_section6,
+        .txt_section6 {
+            text-align: center;
+            color: #000;
+            line-height: 1.2;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-30px);
+        }
+        .h2_section6 {
+            margin-top: 100px;
+            font-size: 40px;
+            padding: 0 10px;
+            font-family: Martel Sans, sans-serif;
+            @media screen and (max-width: 700px) {
+                margin-top: 50px;
+                font-size: 22px;
+            }
+        }
+        .txt_section6 {
+            margin-top: 10px;
+            font-size: 30px;
+            padding: 0 10px;
+            font-family: Montserrat, sans-serif;
+            @media screen and (max-width: 700px) {
+                font-size: 20px;
+            }
+        }
+        .btn_section6 {
+            display: block;
+            font-size: 20px;
+            margin: 20px auto;
+            padding: 10px 50px;
+            background: transparent;
+            border: 1px solid #000;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+}

@@ -13,8 +13,26 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="header.css" />
     </head>
     <body>
+        <header>
+            <a
+                class="nav-link"
+                href="https://prestationweb42.github.io/Formation-GSAP/"
+                ><img src="ressources/cat.svg" alt="logo"
+            /></a>
+
+            <nav class="nav">
+                <a class="nav-link" target="_blank" href="style.css"
+                    >Code CSS</a
+                >
+                <a class="nav-link" target="_blank" href="app.js">Code GSAP</a>
+                <a class="nav-link" target="_blank" href="typewriter.js"
+                    >Code TypeWriter</a
+                >
+            </nav>
+        </header>
         <section class="section1">
             <div class="container-images">
                 <img src="./ressources/cat.svg" alt="chat" />
@@ -53,28 +71,44 @@
             <img src="./ressources/cat.svg" alt="mon chat" />
             <button class="btn_section4">Play</button>
         </section>
-       
+
         <!-- Enregistrer des tweens -->
         <section class="section5">
             <h2>Enregistrer des tweens réutilisables</h2>
-            <img class="imgGlace" src="./ressources/ice-cream.svg" alt="ice-cream" />
+            <img
+                class="imgGlace"
+                src="./ressources/ice-cream.svg"
+                alt="ice-cream"
+            />
             <img class="imgChat" src="./ressources/cat.svg" alt="chat" />
             <button class="btn_section5">Play</button>
         </section>
-        
+
         <!-- Timelines -->
         <section class="section6">
-          <div class="container-images-section6">
-            <img class="imgChat_section6" src="./ressources/cat.svg" alt="chat" />
-            <img class="imgFuji_section6" src="./ressources/fuji.svg" alt="mont fuji" />
-            <img class="imgGlace_section6" src="./ressources/ice-cream.svg" alt="glace" />
-          </div>
-          <h2 class="h2_section6">Enregistrer des tweens réutilisables</h2>
-          <p class="txt_section6">Découverte de la librairie.</p>
-          <button class="btn_section6">Play</button>
+            <div class="container-images-section6">
+                <img
+                    class="imgChat_section6"
+                    src="./ressources/cat.svg"
+                    alt="chat"
+                />
+                <img
+                    class="imgFuji_section6"
+                    src="./ressources/fuji.svg"
+                    alt="mont fuji"
+                />
+                <img
+                    class="imgGlace_section6"
+                    src="./ressources/ice-cream.svg"
+                    alt="glace"
+                />
+            </div>
+            <h2 class="h2_section6">Enregistrer des tweens réutilisables</h2>
+            <p class="txt_section6">Découverte de la librairie.</p>
+            <button class="btn_section6">Play</button>
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     </body>
-</html
+</html>
